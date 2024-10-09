@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    justify-content: center;
+    margin:0px;
+    padding:0px;
+    height:100vh;
+}
+.dice-container{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(216, 53, 53);
+    border-radius: 10px;
+    background-color: rgb(234, 197, 197);
+    height:200px;
+    width:800px;
+    margin: auto;
+   
+    
+}
+
+.dice{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:60px;
+    width:60px;
+    background-color: red;
+    border:2px,solid,black;
+    border-radius: 15px;
+    text-align: center;
+
+    animation-name: roll;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+
+    
+}
+
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes roll{
+    0%{
+       transform: translateX(-5px);
+    }
+    25%{
+        transform: translateY(5px)
+    }
+    75%{
+        transform: translateX(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+.btn{
+    border-radius: 4px;
+}
+
+.btn:hover{
+    background-color: white;
+}
+

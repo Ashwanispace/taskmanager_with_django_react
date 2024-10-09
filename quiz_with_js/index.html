@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="start-test" id="start-test">
+        <h1>Click the below Start button to start the Quiz</h1>
+        <button onclick="startTest()">Start Test</button>
+    </div>
+
+    <div class="quiz-container" id="quiz-container">
+        <div class="quiz-container2" id="quiz-container2">
+            <nav class="navbar">
+                <div class="inside-nav">
+                    <button class="prevpage-btn" onClick="prevPage()">Load Previous 2</button>
+                    <div class="nav-buttons">
+                        Here is the Pagination system
+                    </div>
+                    <button class="nextpage-btn" onClick="nextPage()">Load Next 2</button>
+                </div>
+                <span class="timer">
+
+                </span>
+            </nav>
+
+            <div class="question-container">
+                <h1 class="question" id="question">
+                    <!--Container for question-->
+
+
+                </h1>
+                <button class="clear-response" onclick="clearResponse()">
+                    Clear response
+                </button>
+            </div>
+
+            <div class="options-container" id="options-container">
+                <!--Container for options -->
+
+            </div>
+
+            <div class="buttons">
+                <button class="btn" id="prev" onClick="goPrev()">Previous</button>
+                <button class="btn" id="next" onClick="goNext()">Next</button>
+                <button class="btn" id="submit" onClick="submit()">Submit</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <h1 class="test-finish">
+        <!--Displays the score-->
+    </h1>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+
+</head>
+<body>
+
+    <h1 class="header">Welcome! to Online Unit Converter</h1>
+    <form class="container">
+
+        
+        <div class="input_div">
+        
+        <label for="categories" class="label">Select a Quantity:</label>
+        <select id="categories" class="input_field">
+            <option value="" class="hide"></option>
+            <option value="Length" >Length</option>
+            <option value="Weight">Weight</option>
+            <option value="Volume">Volume</option>
+            <option value="Temperature">Temperature</option>
+        </select>
+
+        </div>
+        
+        <div class="input_div">
+
+        <label for="value" class="label" required>Enter the value:</label>
+        <input type="number" id="value" class="input_field">
+
+        </div>
+
+        <div class="input_div">
+            <label for="src_unit" class="label">Select a Source unit:</label>
+        <select id="src_unit" class="input_field">
+        
+        </select>
+       </div>
+
+        <div class="input_div">
+            <label for="target_unit" class="label">Select a Target unit:</label>
+        <select id="target_unit" class="input_field"> 
+
+        </select>
+      </div>
+
+        
+
+        <div id="buttons">
+            <input type="reset" class="btn" id="reset">
+            <button id="convert" type="button" class="btn">Convert</button>
+        </div>
+
+        <hr class="my-hr">
+
+        <h2 id="answer">
+                
+        </h2>
+    </form>
+</body>
+</html>
+
